@@ -9,7 +9,7 @@ from sklearn.metrics import silhouette_score
 st.title("📰 News Article Hierarchical Clustering")
 
 # Load dataset directly
-dataset = pd.read_csv(r"C:\Users\gurra\HierarchicalClustering\all-data.csv", encoding="latin1")
+dataset = pd.read_csv("all-data.csv", encoding="latin1")
 dataset.columns = ["Sentiment", "Text"]
 
 st.subheader("Sample Data")
@@ -46,3 +46,4 @@ st.subheader("Clustering Evaluation")
 st.write("Silhouette Score:", round(score, 3))
 
 st.success("Hierarchical Clustering Completed!")
+
